@@ -1,0 +1,22 @@
+{
+  "name": "jquery-ajax",
+  "authors": [
+    "chumjikim <kcg9077@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "moment": "momentjs#^2.18.1",
+    "jquery": "^3.2.1",
+    "swiper": "^3.4.2"
+  }
+}

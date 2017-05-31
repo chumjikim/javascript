@@ -1,0 +1,15 @@
+__dev*/
+.idea/
+*sqlite3
+*.sqlite
+media/
+static_root/
+_Dockerfile*
+
+**/django_app/static/css/
+bower_components/
+
+**/jquery-ajax/static/css/
+.conf-secret/
+".gitignore"
+**/app/static/css/

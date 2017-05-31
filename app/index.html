@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Instagram</title>
+  <link rel="stylesheet" href="static/css/sprites.min.css">
+  <link rel="stylesheet" href="static/css/base.min.css">
+  <link rel="stylesheet" href="static/css/common.min.css">
+  <link rel="stylesheet" href="static/css/header.min.css">
+  <link rel="stylesheet" href="static/css/post-list.min.css">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="../bower_components/swiper/dist/css/swiper.min.css">
+</head>
+<body>
+  <div id="wrap">
+    <header class="main-header">
+      <nav class="header-nav">
+        <span class="nav-group nav-left">
+          <a href="" class="logo sprite-logo"></a>
+        </span>
+
+        <span class="nav-group nav-center">
+          <input type="text">
+        </span>
+
+        <span class="nav-group nav-right">
+          <a href="" class="btn-header-nav sprite-explore"></a>
+          <a href="" class="btn-header-nav sprite-activity"></a>
+          <a href="" class="btn-header-nav sprite-profile"></a>
+        </span>
+      </nav>
+    </header>
+    <div class="content-container">
+      <div class="post-list-container">
+
+        <a href="post-create.html" class="btn-add-post">+ Add Post</a>
+      </div>
+    </div>
+    <button id="load-post-list">Load PostList</button>
+  </div>
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../bower_components/moment/moment.js"></script>
+  <script src="../bower_components/moment/locale/ko.js"></script>
+
+  <script src="../bower_components/swiper/dist/js/swiper.jquery.min.js"></script>
+  <!-- Custom Script -->
+  <script src="static/js/cookie.js"></script>
+  <script src="static/js/dom-utils.js"></script>
+  <script src="static/js/apis.js"></script>
+  <script src="static/js/api/load-post-list.js"></script>
+  <script>
+  // 유저 token받아오기
+  // obtainAuthToken('chumjikim', 'whffkaos1');
+  // 초기 PostList로드
+  loadPostList();
+  </script>
+</body>
+</html>
